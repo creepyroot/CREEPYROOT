@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREEPYROOT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dash uno"></div>
+        <div class="dash dos"></div>
+        <div class="dash tres"></div>
+        <div class="dash cuatro"></div>
+    </div>
+    <p id="fetching-message" class="fetching-message">Fetching data from the server<span>.</span><span>.</span><span>.</span></p>
+
+    <script>
+        // Simulating fetching data from the server
+        setTimeout(function() {
+            document.getElementById('fetching-message').style.opacity = '1';
+        }, 2000); // Change the timeout value as needed
+    </script>
+</body>
+</html>
+
