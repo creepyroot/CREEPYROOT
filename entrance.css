@@ -1,0 +1,20 @@
+/* Direct, restrained entrance on the real interface — no blocking intro. */
+body>header{animation:site-header-in .55s cubic-bezier(.22,.8,.3,1) both}
+.opening-founders [data-founder-panel]:not([hidden]) .eyebrow,
+.opening-founders [data-founder-panel]:not([hidden]) .opening-name,
+.opening-founders [data-founder-panel]:not([hidden]) .editorial-role,
+.opening-founders [data-founder-panel]:not([hidden]) .editorial-intro,
+.opening-founders [data-founder-panel]:not([hidden]) .founder-actions,
+.opening-founders [data-founder-panel]:not([hidden]) .editorial-location{animation:site-copy-in .72s cubic-bezier(.2,.75,.24,1) both}
+.opening-founders [data-founder-panel]:not([hidden]) .opening-name{animation-delay:.06s}
+.opening-founders [data-founder-panel]:not([hidden]) .editorial-role{animation-delay:.12s}
+.opening-founders [data-founder-panel]:not([hidden]) .editorial-intro{animation-delay:.17s}
+.opening-founders [data-founder-panel]:not([hidden]) .founder-actions{animation-delay:.22s}
+.opening-founders [data-founder-panel]:not([hidden]) .editorial-location{animation-delay:.27s}
+.opening-founders [data-founder-panel]:not([hidden]) .founder-portrait{animation:site-portrait-in .9s cubic-bezier(.2,.74,.22,1) .08s both}
+.opening-founders [data-founder-panel]:not([hidden]) .founder-hero-bottom{animation:site-rule-in .7s cubic-bezier(.2,.75,.24,1) .24s both}
+@keyframes site-header-in{from{opacity:0;translate:0 -12px}to{opacity:1;translate:0 0}}
+@keyframes site-copy-in{from{opacity:0;translate:0 18px}to{opacity:1;translate:0 0}}
+@keyframes site-portrait-in{from{opacity:0;clip-path:inset(0 0 100% 0);scale:.985}to{opacity:1;clip-path:inset(0);scale:1}}
+@keyframes site-rule-in{from{opacity:0;clip-path:inset(0 100% 0 0)}to{opacity:1;clip-path:inset(0)}}
+@media(prefers-reduced-motion:reduce){body>header,.opening-founders [data-founder-panel]:not([hidden]) .eyebrow,.opening-founders [data-founder-panel]:not([hidden]) .opening-name,.opening-founders [data-founder-panel]:not([hidden]) .editorial-role,.opening-founders [data-founder-panel]:not([hidden]) .editorial-intro,.opening-founders [data-founder-panel]:not([hidden]) .founder-actions,.opening-founders [data-founder-panel]:not([hidden]) .editorial-location,.opening-founders [data-founder-panel]:not([hidden]) .founder-portrait,.opening-founders [data-founder-panel]:not([hidden]) .founder-hero-bottom{animation:none}}
